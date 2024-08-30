@@ -1,0 +1,35 @@
+---
+    import { css } from "../../styled-system/css";
+    import '../index.css';
+---
+
+<header>
+    <div id="box_headerImage" class={css({ paddingTop: { xsm: '0px', lg: '20px' }, paddingBottom: '20px', margin: { xsm: '0 -20px 0 -20px' } })}>
+        <img src="/01_FEM_recipePage/assets/images/image-omelette.jpeg" alt="HeaderImage" 
+            class={
+                css({ 
+                    width: { 
+                        xsm: '100%', 
+                        lg: '100%' 
+                    }, 
+                    height: {
+                        xsm: '170px', 
+                        lg: '200px'
+                    },
+                    borderRadius: '8px'
+                })
+            }
+        >
+    </div>
+    <div id="box_headerTitle" class={css({ width: { xsm: 'calc(100% - 40px)' }, paddingBottom: '10px', margin: { xsm: '0 0 0 5%' } })}>
+        <h3 class={css({ fontSize: '32px', fontWeight: '500', fontFamily: 'young' })}>
+            Simple Omelette Recipe
+        </h3>
+    </div>
+    <div id="box_headerDescription" class={css({ width: { xsm: 'calc(100% - 40px)' }, textAlign: 'left', paddingBottom: '10px', margin: { xsm: '0 0 0 5%' } })}>
+        <p class={css({ fontSize: '16px', fontWeight: '400', fontFamily: 'outfit', color: 'stone.500' })}>
+            An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+        </p>
+    </div>
+</header>
