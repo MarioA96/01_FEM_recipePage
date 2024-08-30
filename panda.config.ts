@@ -13,6 +13,12 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     extend: {
+      tokens: {
+        fonts: {
+          young: { value: 'var(--font-young-serif), sans-serif' },
+          outfit: { value: 'var(--font-outfit), monospace' }
+        }
+      },
       breakpoints: {
         xsm: '375px',
         sm: '640px',

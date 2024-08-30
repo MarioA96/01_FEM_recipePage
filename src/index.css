@@ -1,0 +1,22 @@
+@layer reset, base, tokens, recipes, utilities;
+
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/01_FEM_recipePage/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('/01_FEM_recipePage/assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 400 600 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-young-serif: 'Young Serif', sans-serif;
+    --font-outfit: 'Outfit', monospace;
+}
