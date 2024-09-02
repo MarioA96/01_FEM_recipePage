@@ -1,0 +1,181 @@
+---
+import { css } from "../../styled-system/css";
+import '../index.css';
+
+---
+
+<main>
+    <div id="box_mainPreparationTime" 
+        class={
+            css({ 
+                width: { 
+                    xsm: '100%' 
+                }, 
+                height: { 
+                    xsm: 'fit-content' 
+                }, 
+                backgroundColor: 'rose.50',
+                borderRadius: '5px',
+                marginTop: {
+                    xsm: '10px'
+                },
+                padding: {
+                    xsm: '15px 0 15px 35px'
+                },
+                '& ul': {
+                    fontFamily: 'outfit',
+                    fontSize: '16px',
+                    listStyleType: 'disc',
+                    paddingTop: '10px',
+                    paddingLeft: '20px',
+                    color: 'stone.600',
+                    '& li': {
+                        padding: '2px 0',
+                    },
+                    '& ::marker':{
+                        color: 'rose.800',
+                        fontSize: '12px',
+                    },
+                    '& li strong':{
+                        position: 'relative',
+                        left: '20px'
+                    },
+                    '& li span':{
+                        position: 'relative',
+                        left: '20px'
+                    }
+                }
+            })
+        }
+    >
+        <span class={css({ fontFamily: 'outfit', fontWeight: '700', fontSize: '18px', color: 'rose.800' })}>
+            Preparation Time
+        </span>
+        <ul>
+            <li><strong>Total: </strong><span>Approximately 10 minutes</span></li>
+            <li><strong>Preparation: </strong><span>5 minutes</span></li>
+            <li><strong>Cooking: </strong><span>5 minutes</span></li>
+        </ul>
+    </div>
+    <div id="box_mainIngredients" 
+        class={
+            css({ 
+                marginTop: '10px', 
+                paddingLeft: '15px',
+                marginBottom: '20px',
+                '& ul': {
+                    fontFamily: 'outfit',
+                    fontSize: '16px',
+                    fontWeight: '600',
+                    listStyleType: 'disc',
+                    paddingTop: '10px',
+                    paddingLeft: '20px',
+                    color: 'stone.500',
+                    '& li': {
+                        padding: '2px 0'
+                    },
+                    '& ::marker':{
+                        color: 'rose.800',
+                        fontSize: '12px'
+                    },
+                    '& li span': {
+                        position: 'relative',
+                        left: '20px'
+                    }
+                }
+            })
+        }
+    >
+        <h2 class={css({ fontFamily: 'young', fontSize: '28px', color: 'rose.800' })}>
+            Ingredients
+        </h2>
+        <ul>
+            <li><span>2-3 large eggs</span></li>
+            <li><span>Salt, to taste</span></li>
+            <li><span>Pepper, to taste</span></li>
+            <li><span>1 tablespoon of butter or oil</span></li>
+            <li><span>Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
+        </ul>
+    </div>
+    <hr class={css({ position: 'relative', left:'5%', border: '1.5px solid', color:'stone.300', width:'90%'})}>
+    <div id="box_mainInstructions" 
+        class={css({
+            marginTop: '20px',
+            paddingLeft: '15px',
+            '& ol': {
+                fontFamily: 'outfit',
+                fontSize: '16px',
+                listStyleType: 'decimal',
+                paddingTop: '10px',
+                paddingLeft: '20px',
+                color: 'stone.500',
+                '& li': {
+                    padding: '2px 0'
+                },
+                '& ::marker':{
+                    color: 'rose.800',
+                    fontSize: '16px',
+                    fontWeight: '600'
+                },
+                '& li strong': {
+                    position: 'relative',
+                    left: '20px'
+                },
+                '& li span': {
+                    position: 'relative',
+                    left: '20px'
+                }
+            }
+        })}
+    >
+        <h2 class={css({ fontFamily: 'young', fontSize: '28px', color: 'rose.800' })}>
+            Instructions
+        </h2>
+        <ol>
+            <li>
+                <strong>Beat the eggs: </strong>
+                <span>
+                    In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                    You can add a tablespoon of water or milk for a fluffier texture.
+                </span>
+            </li>
+            <li>
+                <strong>Beat the eggs: </strong>
+                <span>
+                    In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                    You can add a tablespoon of water or milk for a fluffier texture.
+                </span>
+            </li>
+            <li>
+                <strong>Beat the eggs: </strong>
+                <span>
+                    In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                    You can add a tablespoon of water or milk for a fluffier texture.
+                </span>
+            </li>
+            <li>
+                <strong>Beat the eggs: </strong>
+                <span>
+                    In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                    You can add a tablespoon of water or milk for a fluffier texture.
+                </span>
+            </li>
+            <li>
+                <strong>Beat the eggs: </strong>
+                <span>
+                    In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                    You can add a tablespoon of water or milk for a fluffier texture.
+                </span>
+            </li>
+            <li>
+                <strong>Beat the eggs: </strong>
+                <span>
+                    In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                    You can add a tablespoon of water or milk for a fluffier texture.
+                </span>
+            </li>
+        </ol>
+    </div>
+    <div id="box_mainNutrition">
+    </div>
+</main>
