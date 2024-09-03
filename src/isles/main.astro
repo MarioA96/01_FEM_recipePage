@@ -110,12 +110,14 @@ import '../index.css';
                 paddingLeft: '20px',
                 color: 'stone.500',
                 '& li': {
-                    padding: '2px 0'
+                    width: 'calc(100% - 40px)',
+                    padding: '2px 0',
+                    marginBottom: '12px'
                 },
                 '& ::marker':{
                     color: 'rose.800',
                     fontSize: '16px',
-                    fontWeight: '600'
+                    fontWeight: '700'
                 },
                 '& li strong': {
                     position: 'relative',
@@ -176,6 +178,71 @@ import '../index.css';
             </li>
         </ol>
     </div>
-    <div id="box_mainNutrition">
+    <hr class={css({ position: 'relative', left:'5%', border: '1.5px solid', color:'stone.300', width:'90%'})}>
+    <div id="box_mainNutrition" 
+                class={
+                    css({ 
+                        marginTop: '20px',
+                        paddingLeft: '15px'
+                     })
+                }
+    >
+        <h2 class={css({ fontFamily: 'young', marginBottom: '10px', fontSize: '28px', color: 'rose.800' })}>
+            Nutrition
+        </h2>
+        <p class={css({ width: 'calc(100% - 35px)', fontFamily: 'outfit', color: 'stone.500' })}>
+            The table below shows nutritional values per serving without the additional fillings.
+        </p>
+        <div id="box_mainNutritionTable" 
+            class={css({
+                width: 'calc(100% - 30px)',
+                marginLeft: '20px',
+                marginTop: '20px',
+                '& table': {
+                    width: '100%',
+                    borderCollapse: 'collapse',
+                    '& th': {
+                        backgroundColor: 'rose.50',
+                        color: 'rose.800',
+                        padding: '10px',
+                        textAlign: 'left',
+                        borderBottom: '1px solid',
+                        borderColor: 'stone.300'
+                    },
+                    '& td': {
+                        padding: '10px',
+                        borderBottom: '1px solid',
+                        borderColor: 'stone.300'
+                    }
+                }
+            })}
+        >
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table_key">Calories</td>
+                        <td class="table_value">270kcal</td>
+                    </tr>
+                    <tr>
+                        <td class="table_value">Carbs</td>
+                        <td class="table_value">0g</td>
+                    </tr>
+                    <tr>
+                        <td class="table_value">Protein</td>
+                        <td class="table_value">20g</td>
+                    </tr>
+                    <tr>
+                        <td class="table_value">Fat</td>
+                        <td class="table_value">22g</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </main>
